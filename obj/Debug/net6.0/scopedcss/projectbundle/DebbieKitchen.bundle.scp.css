@@ -1,0 +1,58 @@
+/* _content/DebbieKitchen/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-bbjka4xpel] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-bbjka4xpel] {
+  color: #0077cc;
+}
+
+.btn-primary[b-bbjka4xpel] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-bbjka4xpel], .nav-pills .show > .nav-link[b-bbjka4xpel] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-bbjka4xpel] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-bbjka4xpel] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-bbjka4xpel] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-bbjka4xpel] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-bbjka4xpel] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  height: 40px;
+}
+
+img.logo[b-bbjka4xpel] {
+  width: 20px;
+}
+
+.image[b-bbjka4xpel]{
+  width: 40px;
+  height: 50px;
+}
