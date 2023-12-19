@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "Admin - Recipes";
+    Layout = "_Layout";
+}
+
+@model List<Recipe>
+
+<main>
+
+    <div class="flex gap-3 justify-center items-center">
+        
+        <form asp-action="Search" asp-controller="Recipe" method="post" class="flex items-center gap-3">
+            <input type="text" name="recipeName" placeholder="Search" class="input input-bordered w-24">
+            <button type="submit" class="btn btn-success btn-sm">Search</button>
+        </form>
+        <a asp-action="Recipes" class="btn btn-primary btn-sm">Clear Search</a>
+    
+    
+        <a asp-area="" asp-controller="Recipe" asp-action="NewRecipe" class="btn btn-primary btn-sm">Add New Recipe</a>
+        
+    </div>
+
+
+    <div class="flex m-8 gap-6">
+        @foreach (Recipe r in Model)
+        {
+
+            <div class="card shadow-lg m-4 w-80 ">
+                <div class="bg-cover bg-center rounded-tr-2xl rounded-tl-2xl h-80" style="background-image: url(@r.RecipeImg)">
+
+                </div>
+                
+                <div class="card-body">
+                    <h2 class="card-title">@r.RecipeName</h2>
+                    <div class="card-actions justify-end">
+                        <a href="/debbiekitchen/admin/recipes/@r.RecipeId" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+
+</main>

@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "All Recipes";
+    Layout = "_UserLayout";
+}
+
+@model List<Recipe>
+
+<div class="flex flex-col gap-20">
+    <div class="mt-20">
+        <h1 class="text-center font-extrabold text-5xl">Debbie's Recipes</h1>
+    </div>
+
+    <div class="flex gap-3 justify-center items-center">
+        
+        <form asp-action="SearchRecipe" asp-controller="Home" method="post" class="flex items-center gap-3">
+            <input type="text" name="searchInput" placeholder="Search" class="input input-bordered w-40">
+            <button type="submit" class="btn btn-success btn-sm">Search</button>
+        </form>
+        <a asp-action="AllRecipes" class="btn btn-primary btn-sm" asp-controller="Home">Clear Search</a>
+    
+        
+    </div>
+
+
+    <div class="flex m-8 gap-6">
+        @foreach (Recipe r in Model)
+        {
+            <div class="card shadow-lg m-4 w-60 ">
+                <div class="bg-cover bg-center rounded-tr-2xl rounded-tl-2xl h-80" style="background-image: url(@r.RecipeImg)">
+
+                </div>
+                
+                <div class="card-body flex gap-4">
+                    <h4 class="card-title"><a asp-action="ViewRecipe" asp-controller="Home" asp-route-recipeId=@r.RecipeId>@r.RecipeName</a></h4>
+                </div>
+            </div>
+        }
+    </div>
+
+
+</div>

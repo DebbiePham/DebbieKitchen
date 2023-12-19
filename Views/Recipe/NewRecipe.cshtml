@@ -1,0 +1,112 @@
+@{
+    ViewData["Title"] = "New Recipe";
+    Layout = "_Layout";
+}
+
+@model Recipe
+
+
+    <div class="card relative px-4 py-10 bg-white mx-8 md:mx-0 shadow rounded-3xl sm:p-10">
+        <div class="card-body max-w-md mx-auto">
+            @* top of the form *@
+            <div class="card-title flex items-center space-x-5">
+                <h2 class="font-semibold text-xl">Create New Recipe</h2>
+            </div>
+            @* body of the form *@
+            <form asp-action="CreateRecipe" asp-controller="Recipe" method="post">
+                <div class="divide-y divide-gray-200">
+                    <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+
+                        <div class="flex flex-col">
+                            <label asp-for="RecipeName" class="leading-loose"></label>
+                            <input asp-for="RecipeName" type="text"
+                                class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600">
+                            <span asp-validation-for="RecipeName" class="text-red-600"></span>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label asp-for="RecipeImg" class="leading-loose"></label>
+                            <input asp-for="RecipeImg" type="text"
+                                class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600">
+                            <span asp-validation-for="RecipeImg" class="text-red-600"></span>
+
+                        </div>
+
+                        @* prep time & cook time *@
+                        <div class="flex items-center space-x-4 gap-4">
+                            <div class="flex flex-col">
+                                <label asp-for="PrepTimeInMinutes" class="leading-loose"></label>
+                                <div class="relative focus-within:text-gray-600 text-gray-400">
+                                    <input asp-for="PrepTimeInMinutes" type="number"
+                                        class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600">
+                                </div>
+                                <span asp-validation-for="PrepTimeInMinutes" class="text-red-600"></span>
+                            </div>
+                            <div class="flex flex-col">
+                                <label asp-for="CookTimeInMinutes" class="leading-loose"></label>
+                                <div class="relative focus-within:text-gray-600 text-gray-400">
+                                    <input asp-for="CookTimeInMinutes" type="number"
+                                        class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600">
+                                </div>
+                                <span asp-validation-for="CookTimeInMinutes" class="text-red-600"></span>
+                            </div>
+                        </div>
+
+                        @* Additional time & Serving*@
+                        <div class="flex items-center space-x-4 gap-4">
+                            <div class="flex flex-col">
+                                <label asp-for="AdditionalTimeInMinutes" class="leading-loose"></label>
+                                <div class="relative focus-within:text-gray-600 text-gray-400">
+                                    <input asp-for="AdditionalTimeInMinutes" type="number"
+                                        class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600">
+                                </div>
+                                <span asp-validation-for="AdditionalTimeInMinutes" class="text-red-600"></span>
+                            </div>
+                            <div class="flex flex-col">
+                                <label asp-for="Serving" class="leading-loose"></label>
+                                <div class="relative focus-within:text-gray-600 text-gray-400">
+                                    <input asp-for="Serving" type="number"
+                                        class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600">
+                                </div>
+                                <span asp-validation-for="Serving" class="text-red-600"></span>
+                            </div>
+                        </div>
+
+                        @* Ingredients & direction & Note *@
+                        <div class="flex flex-col">
+                            <label asp-for="Ingredients" class="leading-loose"></label>
+                            <textarea asp-for="Ingredients" type="text" rows="4"
+                                class="textarea textarea-bordered textarea-xs w-full max-w-xs sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600">
+                            </textarea>
+                            <span asp-validation-for="Ingredients" class="text-red-600"></span>
+                        </div>
+                        <div class="flex flex-col">
+                            <label asp-for="Direction" class="leading-loose"></label>
+                            <textarea asp-for="Direction" type="text" rows="4"
+                                class="textarea textarea-bordered textarea-xs w-full max-w-xs sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600">
+                            </textarea>
+                            <span asp-validation-for="Direction" class="text-red-600"></span>
+                        </div>
+                        <div class="flex flex-col">
+                            <label asp-for="Note" class="leading-loose"></label>
+                            <textarea asp-for="Note" type="text" rows="4"
+                                class="textarea textarea-bordered textarea-xs w-full max-w-xs sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600">
+                            </textarea>
+                            <span asp-validation-for="Note" class="text-red-600"></span>
+                        </div>
+                    </div>
+
+
+                    @* form footer *@
+                    <div class="card-actions pt-4 flex items-center space-x-4">
+                        <button
+                            class="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">
+                            Create
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+

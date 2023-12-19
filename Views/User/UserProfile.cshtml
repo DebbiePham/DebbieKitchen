@@ -1,0 +1,29 @@
+@model User
+
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "_UserLayout";
+}
+
+<h2>Hello! @Model.Name</h2>
+
+@foreach(SaveRecipe r in Model.SavedRecipes)
+{
+    <div class="card shadow-lg m-4 w-60 ">
+        <div class="bg-cover bg-center rounded-tr-2xl rounded-tl-2xl h-80" style="background-image: url(@r.SavedRecipe.RecipeImg)">
+
+        </div>
+        
+        <div class="card-body flex gap-4">
+            <h4 class="card-title"><a asp-action="ViewRecipe" asp-controller="Home" asp-route-recipeId=@r.SavedRecipe.RecipeId>@r.SavedRecipe.RecipeName</a></h4>
+        </div>
+    </div>
+}
+
+@if(Model.SavedRecipes.Count == 0)
+{
+    <p>No Recipe saved yet.</p>
+}
+
+<p>you have Liked @Model.LikedRecipes.Count recipes </p>
+

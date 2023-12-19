@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Admin - categories";
+    Layout="_Layout";
+}
+
+@model List<Category>
+
+
+        <div class="header flex gap-3 flex-row justify-between items-center text-center m-8">
+            <h1 class="text-5xl">All Categories</h1>
+            <a asp-area="" asp-controller="Category" asp-action="NewCategory" class="btn btn-primary btn-sm">Add New Category</a>
+        </div>
+        
+    
+        <div class="flex m-8 gap-6">
+            @foreach(Category category in Model)
+            {
+            <div class="card shadow-lg w-96 m-4">
+                <div class="bg-cover bg-center rounded-tr-2xl rounded-tl-2xl h-96" style="background-image: url(@category.CategoryImg)"></div>
+                <div class="card-body">
+                    <a asp-action="ShowCategory" asp-controller="Category" asp-route-categoryId=@category.CategoryId class="decoration-none text-dark">
+                        <h2 class="card-title">@category.CategoryName</h2>
+                    </a>
+                    <div class="card-actions justify-end">
+                        <a href="/debbiekitchen/admin/categories/@category.CategoryId" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>

@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Admin Login";
+    Layout = "_LoginLayout";
+    int? adminId = Context.Session.GetInt32("AdminId");
+    bool adminLoggedIn = adminId != null;
+}
+
+<div class="card shadow h-screen">
+    <div class="card-body flex gap-5 flex-row justify-center">
+        @* <div class="w-1/3">
+            @await Html.PartialAsync("_Register")
+        </div> *@
+        <div class="w-2/3">
+            @await Html.PartialAsync("_Login")
+        </div>
+    </div>
+    <div class="text-center m-2">
+        @if(adminLoggedIn)
+        {
+            <a href="/debbiekitchen/admin/home" class="btn btn-primary">Already Logged In</a>
+        }
+    </div>
+</div>

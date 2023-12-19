@@ -1,0 +1,55 @@
+@model Category
+
+@{
+    ViewData["Title"] = "Details Category";
+    Layout="_Layout";
+}
+
+
+<div class="flex flex-col justify-center items-center">
+    <div class="flex flex-col text-center items-center">
+        <div>
+            <h1 class="text-center m-5 font-semibold text-4xl">@Model.CategoryName</h1>
+            <p class="text-center m-5">@Model.Description</p>
+        </div>
+        <div class="flex gap-3 justify-center items-center">
+    
+            <form asp-action="Search" asp-controller="Recipe" method="post" class="flex items-center gap-3">
+                <input type="text" name="recipeName" placeholder="Search by Dish Name" class="input input-bordered">
+                <button type="submit" class="btn btn-success btn-sm">Search</button>
+            </form>
+            <a asp-action="Recipes" class="btn btn-primary btn-sm">Clear Search</a>
+    
+            <a asp-area="" asp-controller="Recipe" asp-action="NewRecipe" class="btn btn-primary btn-sm">Add New Recipe</a>
+
+            <a asp-area="" asp-controller="Category" asp-action="EditCategory" asp-route-categoryId=@Model.CategoryId class="btn btn-warning btn-sm">Edit Category</a>
+
+            <form asp-action="DeleteCategory" asp-controller="Category" asp-route-categoryId=@Model.CategoryId method="post">
+                <button class="btn btn-secondary btn-sm">Delete This Category</button>
+            </form>
+        </div>
+    
+        <div class="flex m-8 gap-6 bg-cover max-h-full max-w-full bg-center backdrop-blur-sm bg-white/30 rounded-tr-2xl rounded-tl-2xl rounded-br-2xl rounded-bl-2xl " style="background-image: url(@Model.CategoryImg)">
+            @foreach (Association r in Model.AssociatedRecipes)
+            {
+    
+                <div class="card shadow-lg m-4 w-60 h-80 ">
+                    <div class="bg-cover bg-center rounded-tr-2xl rounded-tl-2xl h-96 " style="background-image: url(@r.Recipe.RecipeImg)">
+    
+                    </div>
+    
+                    <div class="card-body rounded-br-2xl rounded-bl-2xl bg-white h-1/3">
+                        <h2 class="card-title">@r.Recipe.RecipeName</h2>
+                        <div class="card-actions justify-end">
+                            <a href="/debbiekitchen/admin/recipes/@r.Recipe.RecipeId" class="btn btn-primary btn-xs">View</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    
+        @if(Model.AssociatedRecipes.Count() == 0){
+            <p> Recipes has not added to this category.</p>
+        }
+    </div>
+</div>

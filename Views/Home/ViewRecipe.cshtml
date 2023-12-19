@@ -1,0 +1,113 @@
+@model RecipeViewModel
+
+
+
+@{
+    ViewData["Title"] = Model.Recipe.RecipeName;
+    Layout = "_UserLayout";
+}
+
+
+@{
+    int totalTime = Model.Recipe.PrepTimeInMinutes + Model.Recipe.CookTimeInMinutes + Model.Recipe.AdditionalTimeInMinutes;
+    int hours = totalTime / 60;
+    int minutes = totalTime % 60;
+    bool liked = Model.Recipe.UserLikes.Any(rl => rl.RecipeId == Model.Recipe.RecipeId);
+    bool userLiked = Model.Recipe.UserLikes.Any(ul => ul.UserId == Context.Session.GetInt32("UserId"));
+    bool userSaved = Model.Recipe.SavedRecipes.Any(us => us.UserId == Context.Session.GetInt32("UserId"));
+    int? userId = Context.Session.GetInt32("UserId");
+    bool userLoggedIn = userId != null;
+}
+
+<div class="flex items-center justify-between">
+    <div class="flex items-center text-center">
+        <h1 class="text-center m-5 font-extrabold">@Model.Recipe.RecipeName</h1>
+        @if (liked)
+        {
+            <p>💖 @Model.Recipe.UserLikes.Count()</p>
+        }
+        else
+        {
+            <p>🤍</p>
+        }
+    </div>
+    <div>
+        <form asp-action="ToggleSave" asp-controller="Home" asp-route-recipeId="@Model.Recipe.RecipeId" method="post">
+            @if (userSaved)
+            {
+                <button type="submit" class="btn btn-secondary">Saved</button>
+            }
+            else
+            {
+                <button type="submit" class="btn btn-warning">Save</button>
+            }
+
+        </form>
+    </div>
+    <div>
+        <button id="print-btn" onclick="recipePrint()" class="btn btn-outline">Print Recipe</button>
+    </div>
+    <div>
+        <form asp-action="ToggleLike" asp-controller="Home" asp-route-recipeId="@Model.Recipe.RecipeId" method="post">
+            <button class="btn btn-info">@(userLiked ? "Unlike" : "Like")</button>
+        </form>
+    </div>
+</div>
+<div class="bg-cover bg-center rounded-tr-2xl rounded-tl-2xl rounded-br-2xl rounded-bl-2xl h-72 w-80 mb-10 ml-8"
+    style="background-image: url(@Model.Recipe.RecipeImg)"></div>
+<div class="flex flex-col justify-center items-center border border-red-800 min-w-screen">
+
+    <div class="card-body mx-10">
+        <div class="flex flex-col gap-5 justify-center text-center">
+            <div class="flex gap-5">
+                <p><span class="font-semibold">Prep Time:</span> @Model.Recipe.PrepTimeInMinutes minutes</p>
+                <p><span class="font-semibold">Cook Time: </span>@Model.Recipe.CookTimeInMinutes minutes</p>
+            </div>
+            <div class="flex gap-5">
+                <p><span class="font-semibold">Additional Time: </span>@Model.Recipe.AdditionalTimeInMinutes
+                    minutes</p>
+                <p><span class="font-semibold">Total Time: </span>@hours hours @minutes minutes</p>
+            </div>
+            <div class="flex flex-col text-start ml-28">
+                <h4 class="font-semibold">In Categories of: </h4>
+                @foreach (Association c in Model.Recipe.AssociatedCategories)
+                {
+                    <ul class="flex items-center">
+                        <li>@c.Category.CategoryName</li>
+                    </ul>
+                }
+            </div>
+            <div class="flex flex-col gap-8 text-center justify-center my-10">
+                <h4 class="font-semibold">Ingredients: </h4>
+                <pre>@Model.Recipe.Ingredients</pre>
+            </div>
+        </div>
+        <div class="flex flex-col gap-5 text-center justify-center" style="width:1000px;overflow:auto">
+            <div class="flex flex-col gap-4 text-center">
+                <h4 class="font-semibold">Direction: </h4>
+                <pre>@Model.Recipe.Direction</pre>
+            </div>
+            <div class="flex flex-col gap-4 text-center" >
+                <h4 class="font-semibold">Additional Note: </h4>
+                <pre>@Model.Recipe.Note</pre>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="text-4xl">All Comments:</h2>
+        @foreach(UserComment c in Model.Recipe.UserComments)
+        {
+            <div>
+                <h4>@c.Commenter.Name</h4>
+                <p>@c.Content</p>
+            </div>
+        }
+    </div>
+    @if(userLoggedIn)
+    {
+        @await Html.PartialAsync("_Comment", new UserComment(){RecipeId=Model.Recipe.RecipeId})
+    }
+
+    
+</div>
+

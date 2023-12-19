@@ -1,0 +1,42 @@
+@model Admin
+
+@{
+    ViewData["Title"] = "Profile";
+    Layout="_Layout";
+    int TotalLikes = 0;
+    foreach(Recipe r in Model.AllRecipes)
+    {
+        TotalLikes += r.UserLikes.Count;
+    }
+}
+
+
+
+<h2>All My Posts:</h2>
+<p>Total posts: @Model.AllRecipes.Count</p>
+@* @foreach(Recipe r in Model.AllRecipes)
+{
+    <div class="card shadow w-75">
+        <div class="card-body d-flex flex-row w-75">
+            <div>
+                <h4>@r.RecipeName</h4>
+                <img src="@r.RecipeImg" alt="@r.RecipeName">
+            </div>
+        </div>
+        <div class="card-footer d-flex flex-row justify-content-end">
+            <form asp-action="DeletePost" asp-controller="Post" asp-route-postId="@p.PostId" method="Post" class="m-3">
+                <button class="btn btn-danger">Delete</button>
+            </form>
+            <a asp-action="EditPost" asp-controller="Post" asp-route-postId=@p.PostId class="btn btn-secondary m-3">Edit</a>
+        </div>
+    </div>
+        
+    
+} *@
+
+@if(Model.AllRecipes.Count == 0)
+{
+    <p>You has not posted any recipe yet.</p>
+}
+
+<p>your recipes have been liked a total of @TotalLikes times</p>
