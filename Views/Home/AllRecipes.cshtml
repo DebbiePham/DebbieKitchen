@@ -5,24 +5,24 @@
 
 @model List<Recipe>
 
-<div class="flex flex-col gap-20">
-    <div class="mt-20">
-        <h1 class="text-center font-extrabold text-5xl">Debbie's Recipes</h1>
+<div class="flex flex-col md:gap-20">
+    <div class="md:mt-20">
+        <h1 class="text-center font-extrabold md:text-5xl">Debbie's Recipes</h1>
     </div>
 
-    <div class="flex gap-3 justify-center items-center">
+    <div class="flex md:gap-3 justify-center items-center mt-6">
         
-        <form asp-action="SearchRecipe" asp-controller="Home" method="post" class="flex items-center gap-3">
+        <form asp-action="SearchRecipe" asp-controller="Home" method="post" class="flex items-center md:gap-3 basic-1/2">
             <input type="text" name="searchInput" placeholder="Search" class="input input-bordered w-40">
             <button type="submit" class="btn btn-success btn-sm">Search</button>
         </form>
-        <a asp-action="AllRecipes" class="btn btn-primary btn-sm" asp-controller="Home">Clear Search</a>
+        <a asp-action="AllRecipes" class="btn btn-primary btn-sm basic-1/4" asp-controller="Home">Clear Search</a>
     
         
     </div>
 
 
-    <div class="flex m-8 gap-6">
+    <div class="flex md:flex-wrap flex-col md:m-8 md:gap-6 items-center">
         @foreach (Recipe r in Model)
         {
             <div class="card shadow-lg m-4 w-60 ">
@@ -30,7 +30,7 @@
 
                 </div>
                 
-                <div class="card-body flex gap-4">
+                <div class="card-body flex gap-4 bg-slate-200 rounded-br-2xl rounded-bl-2xl">
                     <h4 class="card-title"><a asp-action="ViewRecipe" asp-controller="Home" asp-route-recipeId=@r.RecipeId>@r.RecipeName</a></h4>
                 </div>
             </div>

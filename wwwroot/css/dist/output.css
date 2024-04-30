@@ -3244,6 +3244,10 @@ html {
   .lg\:text-right {
     text-align: right;
   }
+
+  /* .dropdown{
+    display: none;
+  } */
 }
 
 @media (min-width: 1280px) {

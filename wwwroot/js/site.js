@@ -38,3 +38,11 @@ function recipePrint(){
             window.print();
         }
 }
+
+// drop down menu nav bar for mobile
+
+function Menu(e){
+    const mobileMenu = document.getElementById('mobileMenu');
+    e.name === 'menu' ? (e.name = "close",mobileMenu.classList.add('top-[80px]'), mobileMenu.classList.add('opacity-100')) : ( e.name = "menu" ,mobileMenu.classList.remove('top-[80px]'), mobileMenu.classList.remove('opacity-100'))
+}
+
