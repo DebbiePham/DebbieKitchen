@@ -1,0 +1,15 @@
+C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\bin\Debug\net6.0\publish\DebbieKitchen.exe
+C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\bin\Debug\net6.0\publish\appsettings.Development.json
+C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\bin\Debug\net6.0\publish\appsettings.json
+C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\bin\Debug\net6.0\publish\package-lock.json
+C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\bin\Debug\net6.0\publish\package.json
+C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\bin\Debug\net6.0\publish\DebbieKitchen.dll
+C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\bin\Debug\net6.0\publish\DebbieKitchen.runtimeconfig.json
+C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\bin\Debug\net6.0\publish\DebbieKitchen.pdb
+C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\bin\Debug\net6.0\publish\Microsoft.EntityFrameworkCore.dll
+C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\bin\Debug\net6.0\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\bin\Debug\net6.0\publish\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\bin\Debug\net6.0\publish\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\bin\Debug\net6.0\publish\MySqlConnector.dll
+C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\bin\Debug\net6.0\publish\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\bin\Debug\net6.0\publish\DebbieKitchen.deps.json
