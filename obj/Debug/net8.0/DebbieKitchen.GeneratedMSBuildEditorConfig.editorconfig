@@ -1,0 +1,143 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DebbieKitchen
+build_property.RootNamespace = DebbieKitchen
+build_property.ProjectDir = C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Debbie Pham\Documents\Coding Dojo\Projects\DebbieKitchen
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Admin/AdminLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Admin/_login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX2xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Admin/_Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1JlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Category/Categories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ2F0ZWdvcmllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Category/EditCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Category/NewCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcTmV3Q2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Category/ShowCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcU2hvd0NhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Home/AllCategories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbGxDYXRlZ29yaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Home/AllRecipes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbGxSZWNpcGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Home/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Home/ViewCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWV3Q2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Home/ViewRecipe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWV3UmVjaXBlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Home/_Comment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQ29tbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/NewRecipe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3UmVjaXBlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Recipe/EditRecipe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXEVkaXRSZWNpcGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Recipe/NewRecipe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXE5ld1JlY2lwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Recipe/Recipes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXFJlY2lwZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Recipe/ShowRecipe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXFNob3dSZWNpcGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Shared/_UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/User/UserLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/User/UserProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/User/UserRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Debbie Pham/Documents/Coding Dojo/Projects/DebbieKitchen/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bbjka4xpel
